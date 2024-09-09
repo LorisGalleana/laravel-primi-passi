@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLO WORLD</h1>
+    <div>
+        <h1>{{ $title}} </h1>
+
+        @if($zoo)
+            <h3>Elenco animali:</h3>
+            <ul>
+                @foreach ($animals as $animal)
+                    <li>{{ $animal }} </li>
+                @endforeach
+            </ul>
+        @else
+            <h3>Gli animali sono fuggiti</h3>
+        @endif
+    </div>
 </body>
 </html>

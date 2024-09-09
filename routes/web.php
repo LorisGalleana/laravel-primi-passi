@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+$title = 'Cyber Zoo';
+$animals = ['Elefante', 'Delfino', 'Giraffa', 'Canguro', 'Pinguino'];
+$zoo = true;
+
+
+
+    return view('home', compact('title', 'animals', 'zoo'));
 });
