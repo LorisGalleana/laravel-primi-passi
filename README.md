@@ -1,66 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+# LARAVEL-PRIMI-PASSI
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Descrizione
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**LARAVEL-PRIMI-PASSI** è un progetto che ha lo scopo di avvicinare gli sviluppatori alle funzionalità base del framework Laravel 9. Il progetto consiste nella creazione di una semplice applicazione web che gestisce rotte, views e dati dinamici, utilizzando Blade per il rendering delle pagine e il passaggio di dati tra controller e view.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Funzionalità
 
-## Learning Laravel
+- **Creazione di un progetto Laravel 9**: Installazione e configurazione di un nuovo progetto Laravel 9.
+- **Rotte e Views**: Gestione della rotta principale `/` che visualizza una homepage personalizzata. 
+- **Passaggio di Dati alla View**: Inizialmente viene stampato "Hello World" sulla homepage, successivamente vengono passati dati dinamici alla view, tra cui un array che viene ciclato in pagina.
+- **Condizioni Dinamiche**: Utilizzo di un'espressione condizionale all'interno della view per la visualizzazione di contenuti variabili.
+- **Creazione di Pagine Multiple**: Sviluppo di più pagine nel progetto, con un header che contiene il menu di navigazione. I link tra le pagine sono generati dinamicamente usando la funzione `route()` di Laravel.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Struttura del Progetto
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. **routes/web.php**: File che gestisce le rotte del progetto, inclusa la rotta principale `/` per la homepage.
+2. **resources/views/home.blade.php**: La view principale che mostra i dati dinamici e include la logica condizionale.
+3. **resources/views/layouts/app.blade.php**: Layout di base per il sito, inclusivo del menu di navigazione.
+4. **App/Http/Controllers**: Eventuali controller per gestire la logica del progetto (se aggiunti).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Tecnologie utilizzate
 
-## Laravel Sponsors
+- **Laravel 9**: Framework PHP utilizzato per la creazione del progetto.
+- **Blade**: Motore di templating di Laravel per la gestione delle views.
+- **PHP**: Linguaggio di programmazione utilizzato per la logica dell'applicazione.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
